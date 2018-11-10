@@ -2,33 +2,29 @@
 {
     color: $light-font-color;
     padding-top: 2rem;
-
-    .wrapper 
+    display: flex;
+    justify-content: space-between;
+        
+    .logo 
     {
-        display: flex;
-        justify-content: space-between;
-
-        .logo 
+        img 
         {
-            img 
-            {
-                width: 3rem;
-            }
+            width: 3rem;
         }
+    }
 
-        ul 
+    ul 
+    {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style-type: none;
+
+        li 
         {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            list-style-type: none;
-
-            li 
-            {
-                margin-left: 1.5rem;
-                line-height: 3rem;
-                font-family: 'Montserrat-Bold', sans-serrif;
-            }
+            margin-left: 1.5rem;
+            line-height: 3rem;
+            font-family: 'Montserrat-Bold', sans-serrif;
         }
     }
 }

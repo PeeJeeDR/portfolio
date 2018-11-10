@@ -7,23 +7,29 @@ html, body {
   margin: 0 auto; }
 
 #HeroSection {
-  height: 100vh;
   background-color: #000; }
+  #HeroSection .wrapper {
+    min-height: 100vh;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  #HeroSection .profile img {
+    width: 25rem; }
 
 #MainNavigation {
   color: #fff;
-  padding-top: 2rem; }
-  #MainNavigation .wrapper {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between; }
+  #MainNavigation .logo img {
+    width: 3rem; }
+  #MainNavigation ul {
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: space-between; }
-    #MainNavigation .wrapper .logo img {
-      width: 3rem; }
-    #MainNavigation .wrapper ul {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      list-style-type: none; }
-      #MainNavigation .wrapper ul li {
-        margin-left: 1.5rem;
-        line-height: 3rem;
-        font-family: 'Montserrat-Bold', sans-serrif; }
+    list-style-type: none; }
+    #MainNavigation ul li {
+      margin-left: 1.5rem;
+      line-height: 3rem;
+      font-family: 'Montserrat-Bold', sans-serrif; }
