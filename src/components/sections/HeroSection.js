@@ -1,6 +1,8 @@
 import React from 'react';
 import { MainNavigation } from '../navigations/MainNavigation';
 import Profile from '../../images/PROFILE.png';
+import { PrimaryTitle } from '../common/PrimaryTitle';
+import { SubTitle } from '../common/SubTitle';
 
 export class HeroSection extends React.Component {
     render = () => {
@@ -11,6 +13,15 @@ export class HeroSection extends React.Component {
 
                     <div className='profile'>
                         <img src={ Profile } alt="Myself"/>
+                        <div className='title'>
+                            <PrimaryTitle>
+                                Hi! I'm Pieter-Jan
+                            </PrimaryTitle>
+
+                            <SubTitle>
+                                Front-end Web Developer / Designer
+                            </SubTitle>
+                        </div>
                     </div>
                 </div>
             </div>
