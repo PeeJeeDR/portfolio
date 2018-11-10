@@ -1,0 +1,40 @@
+#AboutSection
+{
+    min-height: 90vh;
+
+    .content_container 
+    {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 10%;
+
+        #BigHeroText 
+        {
+            &:last-child 
+            {
+                line-height: 15rem;
+                margin-left: -1.4rem;
+            }
+        }
+
+        .love 
+        {
+            padding-top: 6rem;
+
+            #PrimaryTitle 
+            {
+                text-align: right;
+            }
+        }
+    }
+
+    .me 
+    {
+        padding-top: 2rem;
+
+        #CommonText 
+        {
+            margin-top: 1rem;
+        }
+    }
+}

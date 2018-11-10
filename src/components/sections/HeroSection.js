@@ -14,7 +14,7 @@ export class HeroSection extends React.Component {
                     <div className='profile'>
                         <img src={ Profile } alt="Myself"/>
                         <div className='title'>
-                            <PrimaryTitle>
+                            <PrimaryTitle color='light'>
                                 Hi! I'm Pieter-Jan
                             </PrimaryTitle>
 

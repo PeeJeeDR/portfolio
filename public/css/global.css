@@ -30,6 +30,24 @@ html, body {
       align-self: center;
       width: 25rem; }
 
+#AboutSection {
+  min-height: 90vh; }
+  #AboutSection .content_container {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10%; }
+    #AboutSection .content_container #BigHeroText:last-child {
+      line-height: 15rem;
+      margin-left: -1.4rem; }
+    #AboutSection .content_container .love {
+      padding-top: 6rem; }
+      #AboutSection .content_container .love #PrimaryTitle {
+        text-align: right; }
+  #AboutSection .me {
+    padding-top: 2rem; }
+    #AboutSection .me #CommonText {
+      margin-top: 1rem; }
+
 #MainNavigation {
   color: #fff;
   padding-top: 2rem;
@@ -48,11 +66,36 @@ html, body {
       font-family: 'Montserrat-Bold', sans-serrif; }
 
 #PrimaryTitle {
-  color: #fff;
   font-size: 2.3rem;
   font-family: 'Montserrat-Bold'; }
+  #PrimaryTitle.dark {
+    color: #000; }
+  #PrimaryTitle.light {
+    color: #fff; }
 
 #SubTitle {
   color: #fff;
   font-size: 0.8rem;
   font-family: 'Montserrat-Bold'; }
+
+#BigHeroText {
+  color: #000;
+  font-size: 18rem;
+  font-family: 'Montserrat-Bold';
+  line-height: 12.3rem; }
+
+#CommonText {
+  font-family: 'Montserrat-Bold'; }
+  #CommonText.dark {
+    color: #000; }
+  #CommonText.light {
+    color: #fff; }
+
+#LogoOverview {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 2rem; }
+  #LogoOverview img {
+    width: 10rem;
+    margin-left: 1.5rem;
+    align-self: center; }

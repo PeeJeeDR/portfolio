@@ -1,6 +1,5 @@
-#PrimaryTitle 
+#CommonText 
 {
-    font-size: 2.3rem;
     font-family: 'Montserrat-Bold';
 
     &.dark 
@@ -8,7 +7,7 @@
         color: $dark-color;
     }
 
-    &.light
+    &.light 
     {
         color: $light-color;
     }
