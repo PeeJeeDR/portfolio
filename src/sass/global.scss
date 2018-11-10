@@ -1,2 +1,9 @@
 // Variables
-@import 'variables.scss';
+@import 'variables';
+
+// Global styles
+@import 'Index';
+
+// Components
+@import 'HeroSection';
+@import 'MainNavigation';
