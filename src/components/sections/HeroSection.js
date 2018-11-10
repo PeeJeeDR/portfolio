@@ -1,6 +1,6 @@
 import React from 'react';
 import { MainNavigation } from '../navigations/MainNavigation';
-import Profile from '../../images/PROFILE.png';
+import Profile from '../../images/PROFILE_1.png';
 import { PrimaryTitle } from '../common/PrimaryTitle';
 import { SubTitle } from '../common/SubTitle';
 

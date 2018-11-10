@@ -12,12 +12,13 @@
 
     .profile 
     {
+        width: 95%;
         display: flex;
         justify-content: space-between;
 
         .title
         {
-            padding-top: 6rem;
+            padding-top: 10rem;
             display: flex;
             flex-direction: column;
 
@@ -34,7 +35,7 @@
         img 
         {
             align-self: center;
-            width: 25rem;
+            width: 35rem;
         }
     }
 }

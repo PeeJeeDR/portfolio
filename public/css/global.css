@@ -14,10 +14,11 @@ html, body {
     flex-direction: column;
     justify-content: space-between; }
   #HeroSection .profile {
+    width: 95%;
     display: flex;
     justify-content: space-between; }
     #HeroSection .profile .title {
-      padding-top: 6rem;
+      padding-top: 10rem;
       display: flex;
       flex-direction: column; }
       #HeroSection .profile .title #SubTitle {
@@ -28,25 +29,31 @@ html, body {
         padding: 0.5rem 1rem; }
     #HeroSection .profile img {
       align-self: center;
-      width: 25rem; }
+      width: 35rem; }
 
 #AboutSection {
-  min-height: 90vh; }
-  #AboutSection .content_container {
+  min-height: 100vh; }
+  #AboutSection .section_text {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding-right: 10%; }
-    #AboutSection .content_container #BigHeroText:last-child {
-      line-height: 15rem;
-      margin-left: -1.4rem; }
+    justify-content: space-between; }
+  #AboutSection .me {
+    padding-top: 4rem;
+    text-align: center; }
+  #AboutSection .content_container {
+    justify-content: space-between; }
     #AboutSection .content_container .love {
       padding-top: 6rem; }
       #AboutSection .content_container .love #PrimaryTitle {
-        text-align: right; }
-  #AboutSection .me {
-    padding-top: 2rem; }
-    #AboutSection .me #CommonText {
-      margin-top: 1rem; }
+        text-align: center; }
+
+#AboutBox {
+  background-color: #000;
+  width: 84%;
+  margin: 4rem auto;
+  padding: 3rem 0; }
+  #AboutBox #PrimaryTitle {
+    text-align: center; }
 
 #MainNavigation {
   color: #fff;
@@ -93,9 +100,24 @@ html, body {
 
 #LogoOverview {
   display: flex;
-  justify-content: flex-end;
-  padding-top: 2rem; }
+  justify-content: center;
+  padding-top: 3rem; }
   #LogoOverview img {
-    width: 10rem;
-    margin-left: 1.5rem;
-    align-self: center; }
+    width: 8rem;
+    align-self: center;
+    margin: 0 1rem; }
+
+#ProgressBarsOverview {
+  padding: 4rem 6rem; }
+  #ProgressBarsOverview #PrimaryTitle {
+    margin-bottom: 3rem; }
+
+#SingleBar {
+  display: flex; }
+  #SingleBar .bar {
+    width: calc(100% - 4px);
+    line-height: 30px; }
+  #SingleBar .line {
+    width: 2px;
+    height: 30px;
+    background-color: #fff; }

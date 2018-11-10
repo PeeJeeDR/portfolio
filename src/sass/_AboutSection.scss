@@ -1,21 +1,23 @@
 #AboutSection
 {
-    min-height: 90vh;
+    min-height: 100vh;
+
+    .section_text 
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .me 
+    {
+        padding-top: 4rem;
+        text-align: center;
+    }
 
     .content_container 
     {
-        display: flex;
         justify-content: space-between;
-        padding-right: 10%;
-
-        #BigHeroText 
-        {
-            &:last-child 
-            {
-                line-height: 15rem;
-                margin-left: -1.4rem;
-            }
-        }
 
         .love 
         {
@@ -23,18 +25,10 @@
 
             #PrimaryTitle 
             {
-                text-align: right;
+                text-align: center;
             }
         }
     }
 
-    .me 
-    {
-        padding-top: 2rem;
 
-        #CommonText 
-        {
-            margin-top: 1rem;
-        }
-    }
 }
