@@ -58,7 +58,35 @@ html, body {
     padding-top: 4rem; }
 
 #FooterSection {
-  background-color: #000; }
+  margin-top: 4rem;
+  padding: 8rem 0 14rem 0;
+  background-color: #000;
+  text-align: center; }
+  #FooterSection .contact {
+    margin: 0;
+    display: flex;
+    justify-content: center; }
+    #FooterSection .contact div {
+      display: flex; }
+      #FooterSection .contact div.contact_section {
+        margin: 0 1.5rem; }
+      #FooterSection .contact div i {
+        font-size: 1.5rem;
+        color: #fff;
+        margin-right: 0.5rem; }
+      #FooterSection .contact div a {
+        text-decoration: none;
+        padding-bottom: 0.4rem;
+        box-sizing: border-box; }
+        #FooterSection .contact div a:after {
+          content: '';
+          display: block;
+          height: 5px;
+          background-color: #fff;
+          width: 0;
+          transition: all .5s ease-in-out; }
+      #FooterSection .contact div:hover a:after {
+        width: 100%; }
 
 #MainNavigation {
   color: #fff;
