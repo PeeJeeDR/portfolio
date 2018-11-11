@@ -1,6 +1,7 @@
 import React from 'react';
 import { db } from '../../firebase/firebase';
 import { SingleProject } from './SingleProject';
+import { LogoPlaceholder } from '../logos/LogoPlaceholder';
 
 export class ProjectsOverview extends React.Component {
     constructor (props) {
@@ -23,11 +24,21 @@ export class ProjectsOverview extends React.Component {
             <SingleProject key={ i } project={ project }/>
         ));
     }
+
+    renderLogo = () => {
+        if (this.state.data.length % 2 !== 0)
+        {
+            return (
+                <LogoPlaceholder />
+            );
+        }
+    }
     
     render = () => {
         return (
             <div id='ProjectsOverview'>
                 { this.renderProjects() }
+                { this.renderLogo() }
             </div>
         )
     }

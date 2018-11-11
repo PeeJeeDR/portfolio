@@ -1,0 +1,22 @@
+#LogoPlaceholder 
+{
+    background-color: $dark-color;
+    width: calc(50% - 1rem);
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    
+    img 
+    {
+        align-self: center;
+        transition: all 2s ease-in-out;
+    }
+
+    &:hover 
+    {
+        img 
+        {
+            transform: scale(1.1);
+        }
+    }
+}

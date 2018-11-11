@@ -23,7 +23,7 @@
         left: 0;
         right: 0;
         padding: 0 4rem;
-
+        
         #CommonText
         {
             position: relative;
@@ -68,11 +68,19 @@
 
             .icons 
             {
+                display: flex;
+
                 i 
                 {
                     color: $light-color;
                     font-size: 1.6rem;
                     line-height: 5rem;
+                    margin-left: 1.5rem;
+
+                    &:hover 
+                    {
+                        cursor: pointer;
+                    }
                 }
             }
         }

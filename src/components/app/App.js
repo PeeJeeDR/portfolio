@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { HeroSection } from '../sections/HeroSection';
 import { AboutSection } from '../sections/AboutSection';
 import { PortfolioSection } from '../sections/PortfolioSection';
+import { FooterSection } from '../sections/FooterSection';
 
 class App extends Component {
 	render() {
@@ -10,6 +11,7 @@ class App extends Component {
 				<HeroSection />
 				<AboutSection />
 				<PortfolioSection />
+				<FooterSection />
 			</div>
 		);
 	}

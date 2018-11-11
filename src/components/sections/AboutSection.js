@@ -17,9 +17,10 @@ export class AboutSection extends React.Component {
                             web front end developer!
                         </CommonText>
                     </div>
-                </div>
+                
 
-                <AboutBox />
+                    <AboutBox />
+                </div>
             </div>
         )
     }

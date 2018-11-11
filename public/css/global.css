@@ -4,8 +4,8 @@ html, body {
 
 #HeroSection {
   background-color: #000; }
-  #HeroSection .wrapper {
-    min-height: 100vh;
+  #HeroSection .container {
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
@@ -44,7 +44,7 @@ html, body {
 
 #AboutBox {
   background-color: #000;
-  width: 84%;
+  width: 100%;
   margin: 4rem auto 0 auto;
   padding: 7rem 0 4rem 0; }
   #AboutBox #PrimaryTitle {
@@ -56,6 +56,9 @@ html, body {
   text-align: center; }
   #PortfolioSection #BigHeroText {
     padding-top: 4rem; }
+
+#FooterSection {
+  background-color: #000; }
 
 #MainNavigation {
   color: #fff;
@@ -102,8 +105,7 @@ html, body {
   #CommonText.light {
     color: #fff; }
   #CommonText.medium {
-    font-family: 'Montserrat';
-    color: #E5E5E5; }
+    font-family: 'Montserrat'; }
 
 #LogoOverview {
   display: flex;
@@ -113,6 +115,18 @@ html, body {
     width: 8rem;
     align-self: center;
     margin: 0 1rem; }
+
+#LogoPlaceholder {
+  background-color: #000;
+  width: calc(50% - 1rem);
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center; }
+  #LogoPlaceholder img {
+    align-self: center;
+    transition: all 2s ease-in-out; }
+  #LogoPlaceholder:hover img {
+    transform: scale(1.1); }
 
 #ProgressBarsOverview {
   padding: 4rem 6rem; }
@@ -189,10 +203,15 @@ html, body {
       line-height: 5rem;
       display: flex;
       justify-content: space-between; }
-      #SingleProject .img_container .description .icons i {
-        color: #fff;
-        font-size: 1.6rem;
-        line-height: 5rem; }
+      #SingleProject .img_container .description .icons {
+        display: flex; }
+        #SingleProject .img_container .description .icons i {
+          color: #fff;
+          font-size: 1.6rem;
+          line-height: 5rem;
+          margin-left: 1.5rem; }
+          #SingleProject .img_container .description .icons i:hover {
+            cursor: pointer; }
     #SingleProject .img_container:hover img {
       transform: scale(1.1); }
     #SingleProject .img_container:hover .description {
