@@ -2,10 +2,6 @@ html, body {
   margin: 0;
   padding: 0; }
 
-.wrapper {
-  width: 80%;
-  margin: 0 auto; }
-
 #HeroSection {
   background-color: #000; }
   #HeroSection .wrapper {
@@ -55,7 +51,7 @@ html, body {
     text-align: center; }
 
 #PortfolioSection {
-  background-color: #000;
+  background-color: #fff;
   min-height: 100vh;
   text-align: center; }
   #PortfolioSection #BigHeroText {
@@ -105,6 +101,9 @@ html, body {
     color: #000; }
   #CommonText.light {
     color: #fff; }
+  #CommonText.medium {
+    font-family: 'Montserrat';
+    color: #E5E5E5; }
 
 #LogoOverview {
   display: flex;
@@ -136,3 +135,70 @@ html, body {
       width: 2px;
       height: 30px;
       background-color: #fff; }
+
+#ProjectsOverview {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 4rem; }
+
+#SingleProject {
+  width: calc(50% - 1rem);
+  margin: 0.5rem; }
+  #SingleProject .overlay {
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all .2s ease-in-out; }
+  #SingleProject .overlay_text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 4rem; }
+    #SingleProject .overlay_text #CommonText {
+      position: relative;
+      top: 40%;
+      opacity: 0;
+      transition: all .3s ease-in-out 150ms;
+      margin-bottom: 0.5rem; }
+      #SingleProject .overlay_text #CommonText.second {
+        transition: all .2s ease-in-out 150ms; }
+  #SingleProject .img_container {
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box; }
+    #SingleProject .img_container img {
+      width: 100%;
+      transition: all 2s ease-in-out; }
+    #SingleProject .img_container .description {
+      position: absolute;
+      overflow: hidden;
+      bottom: 0;
+      height: 0rem;
+      width: 100%;
+      background-color: #000;
+      transition: all .2s ease-in-out;
+      padding: 0 2rem;
+      text-align: left;
+      line-height: 5rem;
+      display: flex;
+      justify-content: space-between; }
+      #SingleProject .img_container .description .icons i {
+        color: #fff;
+        font-size: 1.6rem;
+        line-height: 5rem; }
+    #SingleProject .img_container:hover img {
+      transform: scale(1.1); }
+    #SingleProject .img_container:hover .description {
+      height: 5rem; }
+    #SingleProject .img_container:hover .overlay {
+      opacity: 0.4; }
+    #SingleProject .img_container:hover .overlay_text #CommonText {
+      opacity: 1;
+      top: 30%; }

@@ -8,7 +8,7 @@ export class HeroSection extends React.Component {
     render = () => {
         return (
             <div id='HeroSection'>
-                <div className="wrapper">
+                <div className="container">
                     <MainNavigation />
 
                     <div className='profile'>

@@ -1,6 +1,6 @@
 import React from 'react';
-import firebase from 'firebase';
-import { app, db } from '../../firebase/firebase';
+import { db } from '../../firebase/firebase';
+import { SingleProject } from './SingleProject';
 
 export class ProjectsOverview extends React.Component {
     constructor (props) {
@@ -12,14 +12,22 @@ export class ProjectsOverview extends React.Component {
     
     componentWillMount = () => {
         db.ref('projects').on('value', snap => {
-            console.log(snap);
-        });
+            this.setState({
+                data: snap.val(),
+            });
+        })
+    }
+
+    renderProjects = () => {
+        return this.state.data.map((project, i) => (
+            <SingleProject key={ i } project={ project }/>
+        ));
     }
     
     render = () => {
         return (
             <div id='ProjectsOverview'>
-                
+                { this.renderProjects() }
             </div>
         )
     }

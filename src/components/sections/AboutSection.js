@@ -7,7 +7,7 @@ export class AboutSection extends React.Component {
     render = () => {
         return (
             <div id='AboutSection'>
-                <div class='wrapper'>
+                <div className='container'>
                     <BigHeroText color='dark'>ABOUT</BigHeroText>
                 
                     <div className='me'>
