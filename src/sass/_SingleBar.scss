@@ -1,16 +1,34 @@
 #SingleBar 
 {
-    display: flex;
+    padding-top: 2rem;
 
-    .bar 
+    #CommonText 
     {
-        width: calc(100% - 4px);
-        line-height: 30px;
+        padding-left: 0.4rem;
     }
-    .line 
+
+    .bar_container 
     {
-        width: 2px;
-        height: 30px;
-        background-color: $light-color;
+        display: flex;
+
+        .bar 
+        {
+            width: calc(100% - 4px);
+            line-height: 30px;
+
+            svg 
+            {
+                height: 10px;
+                width: 100%;
+            }
+        }
+        .line 
+        {
+            width: 2px;
+            height: 30px;
+            background-color: $light-color;
+        }
     }
+
+
 }

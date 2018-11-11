@@ -10,7 +10,9 @@ export class ProgressBarsOverview extends React.Component {
                     But that's not all! ;-)
                 </PrimaryTitle>
 
-                <SingleBar percent={20}/>
+                <SingleBar percent={70} name='JSX'/>
+                <SingleBar percent={85} name='SCSS'/>
+                <SingleBar percent={80} name='Laravel'/>
             </div>
         )
     }

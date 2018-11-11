@@ -2,17 +2,16 @@
 {
     min-height: 100vh;
 
-    .section_text 
+    #BigHeroText 
     {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+        text-align: center;
+        padding-top: 4rem;
     }
 
     .me 
     {
-        padding-top: 4rem;
         text-align: center;
+        padding-bottom: 4rem;
     }
 
     .content_container 

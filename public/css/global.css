@@ -33,13 +33,12 @@ html, body {
 
 #AboutSection {
   min-height: 100vh; }
-  #AboutSection .section_text {
-    width: 100%;
-    display: flex;
-    justify-content: space-between; }
+  #AboutSection #BigHeroText {
+    text-align: center;
+    padding-top: 4rem; }
   #AboutSection .me {
-    padding-top: 4rem;
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 4rem; }
   #AboutSection .content_container {
     justify-content: space-between; }
     #AboutSection .content_container .love {
@@ -51,7 +50,7 @@ html, body {
   background-color: #000;
   width: 84%;
   margin: 4rem auto;
-  padding: 3rem 0; }
+  padding: 7rem 0; }
   #AboutBox #PrimaryTitle {
     text-align: center; }
 
@@ -87,9 +86,8 @@ html, body {
 
 #BigHeroText {
   color: #000;
-  font-size: 18rem;
-  font-family: 'Montserrat-Bold';
-  line-height: 12.3rem; }
+  font-size: 8rem;
+  font-family: 'Montserrat-Bold'; }
 
 #CommonText {
   font-family: 'Montserrat-Bold'; }
@@ -113,11 +111,18 @@ html, body {
     margin-bottom: 3rem; }
 
 #SingleBar {
-  display: flex; }
-  #SingleBar .bar {
-    width: calc(100% - 4px);
-    line-height: 30px; }
-  #SingleBar .line {
-    width: 2px;
-    height: 30px;
-    background-color: #fff; }
+  padding-top: 2rem; }
+  #SingleBar #CommonText {
+    padding-left: 0.4rem; }
+  #SingleBar .bar_container {
+    display: flex; }
+    #SingleBar .bar_container .bar {
+      width: calc(100% - 4px);
+      line-height: 30px; }
+      #SingleBar .bar_container .bar svg {
+        height: 10px;
+        width: 100%; }
+    #SingleBar .bar_container .line {
+      width: 2px;
+      height: 30px;
+      background-color: #fff; }

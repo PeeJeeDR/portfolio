@@ -9,20 +9,16 @@ export class AboutSection extends React.Component {
     render = () => {
         return (
             <div id='AboutSection'>
-                <div class='section_text'>
-                    <BigHeroText>A</BigHeroText>
-                    <BigHeroText>B</BigHeroText>
-                    <BigHeroText>O</BigHeroText>
-                    <BigHeroText>U</BigHeroText>
-                    <BigHeroText>T</BigHeroText>
-                </div>
-
-                <div className='me wrapper'>
-                    <CommonText>
-                        Mijn naam is Pieter-Jan De Ridder, student Multimedia Technologie <br/>
-                        aan de Karel de Grote Hogeschool en een gepassioneerd <br/>
-                        web front end developer!
-                    </CommonText>
+                <div class='wrapper'>
+                    <BigHeroText>ABOUT</BigHeroText>
+                
+                    <div className='me'>
+                        <CommonText>
+                            Mijn naam is Pieter-Jan De Ridder, student Multimedia Technologie <br/>
+                            aan de Karel de Grote Hogeschool en een gepassioneerd <br/>
+                            web front end developer!
+                        </CommonText>
+                    </div>
                 </div>
 
                 <AboutBox />
