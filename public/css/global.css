@@ -31,10 +31,16 @@ html, body {
   min-height: 100vh; }
   #AboutSection #BigHeroText {
     text-align: center;
-    padding-top: 4rem; }
+    padding-top: 8rem; }
   #AboutSection .me {
     text-align: center;
     padding-bottom: 4rem; }
+    #AboutSection .me a {
+      text-decoration: none;
+      font-size: 2.4rem;
+      color: #000; }
+      #AboutSection .me a i {
+        margin-top: 1rem; }
   #AboutSection .content_container {
     justify-content: space-between; }
     #AboutSection .content_container .love {
@@ -45,7 +51,7 @@ html, body {
 #AboutBox {
   background-color: #000;
   width: 100%;
-  margin: 4rem auto 0 auto;
+  margin: 0 auto;
   padding: 7rem 0 4rem 0; }
   #AboutBox #PrimaryTitle {
     text-align: center; }
@@ -55,13 +61,28 @@ html, body {
   min-height: 100vh;
   text-align: center; }
   #PortfolioSection #BigHeroText {
-    padding-top: 4rem; }
+    padding-top: 8rem; }
 
 #FooterSection {
   margin-top: 4rem;
-  padding: 8rem 0 14rem 0;
+  padding: 8rem 0 10rem 0;
   background-color: #000;
   text-align: center; }
+  #FooterSection i {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-right: 1rem; }
+  #FooterSection a {
+    text-decoration: none;
+    padding-bottom: 0.4rem;
+    box-sizing: border-box; }
+    #FooterSection a:after {
+      content: '';
+      display: block;
+      height: 5px;
+      background-color: #fff;
+      width: 0;
+      transition: all .5s ease-in-out; }
   #FooterSection .contact {
     margin: 0;
     display: flex;
@@ -70,23 +91,21 @@ html, body {
       display: flex; }
       #FooterSection .contact div.contact_section {
         margin: 0 1.5rem; }
-      #FooterSection .contact div i {
-        font-size: 1.5rem;
-        color: #fff;
-        margin-right: 0.5rem; }
-      #FooterSection .contact div a {
-        text-decoration: none;
-        padding-bottom: 0.4rem;
-        box-sizing: border-box; }
-        #FooterSection .contact div a:after {
-          content: '';
-          display: block;
-          height: 5px;
-          background-color: #fff;
-          width: 0;
-          transition: all .5s ease-in-out; }
       #FooterSection .contact div:hover a:after {
         width: 100%; }
+  #FooterSection .git {
+    padding-top: 6rem; }
+    #FooterSection .git a {
+      display: flex;
+      justify-content: center;
+      padding-top: 1rem; }
+      #FooterSection .git a:hover #CommonText {
+        opacity: 0.7; }
+      #FooterSection .git a #CommonText {
+        color: #F3B61F;
+        margin-top: 0.1rem;
+        opacity: 1;
+        transition: all .2s ease-in-out; }
 
 #MainNavigation {
   color: #fff;
@@ -164,18 +183,19 @@ html, body {
 #SingleBar {
   padding-top: 2rem; }
   #SingleBar #CommonText {
-    padding-left: 0.4rem; }
+    padding-left: 1rem; }
   #SingleBar .bar_container {
     display: flex; }
     #SingleBar .bar_container .bar {
       width: calc(100% - 4px);
-      line-height: 30px; }
+      line-height: 20px;
+      margin-top: -2px; }
       #SingleBar .bar_container .bar svg {
         height: 10px;
         width: 100%; }
     #SingleBar .bar_container .line {
       width: 2px;
-      height: 30px;
+      height: 20px;
       background-color: #fff; }
 
 #ProjectsOverview {

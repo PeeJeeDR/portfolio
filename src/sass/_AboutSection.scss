@@ -5,13 +5,25 @@
     #BigHeroText 
     {
         text-align: center;
-        padding-top: 4rem;
+        padding-top: 8rem;
     }
 
     .me 
     {
         text-align: center;
         padding-bottom: 4rem;
+
+        a 
+        {
+            text-decoration: none;
+            font-size: 2.4rem;
+            color: $dark-color;
+
+            i 
+            {
+                margin-top: 1rem;
+            }
+        }
     }
 
     .content_container 

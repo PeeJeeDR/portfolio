@@ -4,7 +4,7 @@
 
     #CommonText 
     {
-        padding-left: 0.4rem;
+        padding-left: 1rem;
     }
 
     .bar_container 
@@ -14,7 +14,8 @@
         .bar 
         {
             width: calc(100% - 4px);
-            line-height: 30px;
+            line-height: 20px;
+            margin-top: -2px;
 
             svg 
             {
@@ -22,10 +23,11 @@
                 width: 100%;
             }
         }
+
         .line 
         {
             width: 2px;
-            height: 30px;
+            height: 20px;
             background-color: $light-color;
         }
     }

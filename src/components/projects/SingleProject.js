@@ -16,7 +16,7 @@ export const SingleProject = (props) => {
                         <CommonText color='light'>{ props.project.name }</CommonText>
                     </div>
                     <div className='icons'>
-                        <a href=""><i className="fab fa-facebook-f"></i></a>
+                        <a href="google.be"><i className="fab fa-facebook-f"></i></a>
                         <a href={ props.project.url }><i className="fas fa-link"></i></a>
                     </div>
                 </div>

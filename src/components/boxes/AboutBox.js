@@ -4,6 +4,7 @@ import { LogoOverview } from '../logos/LogoOverview';
 import { ProgressBarsOverview } from '../progressbars/ProgressBarsOverview';
 
 export class AboutBox extends React.Component {
+
     render = () => {
         return (
             <div id='AboutBox'>
@@ -12,6 +13,7 @@ export class AboutBox extends React.Component {
                 </PrimaryTitle>
 
                 <LogoOverview />
+
                 <ProgressBarsOverview />
             </div>
         )

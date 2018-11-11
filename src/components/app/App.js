@@ -5,11 +5,6 @@ import { PortfolioSection } from '../sections/PortfolioSection';
 import { FooterSection } from '../sections/FooterSection';
 
 class App extends Component {
-	componentWillMount = () => {
-		console.log(window.pageXOffset);
-	}
-	
-	
 	render() {
 		return (
 			<div id='App'>

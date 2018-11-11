@@ -8,7 +8,8 @@
     "rc-progress": "^2.2.6",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
-    "react-scripts": "2.1.1"
+    "react-scripts": "2.1.1",
+    "react-visibility-sensor": "^5.0.2"
   },
   "scripts": {
     "watch-css": "node-sass-chokidar ./src/sass/global.scss -o ./public/css --watch",

@@ -16,6 +16,10 @@ export class AboutSection extends React.Component {
                             aan de Karel de Grote Hogeschool en een gepassioneerd <br/>
                             web front end developer!
                         </CommonText>
+
+                        <a href="https://www.linkedin.com/in/pieter-jan-de-ridder-991483100/">
+                            <i className="fab fa-linkedin"></i>
+                        </a>
                     </div>
                 
 
