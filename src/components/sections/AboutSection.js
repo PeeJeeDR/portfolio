@@ -1,7 +1,5 @@
 import React from 'react';
 import { BigHeroText } from '../common/BigHeroText';
-import { PrimaryTitle } from '../common/PrimaryTitle';
-import { LogoOverview } from '../logos/LogoOverview';
 import { CommonText } from '../common/CommonText';
 import { AboutBox } from '../boxes/AboutBox';
 
@@ -10,7 +8,7 @@ export class AboutSection extends React.Component {
         return (
             <div id='AboutSection'>
                 <div class='wrapper'>
-                    <BigHeroText>ABOUT</BigHeroText>
+                    <BigHeroText color='dark'>ABOUT</BigHeroText>
                 
                     <div className='me'>
                         <CommonText>

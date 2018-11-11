@@ -8,6 +8,7 @@
 @import 'HeroSection';
 @import 'AboutSection';
 @import 'AboutBox';
+@import 'PortfolioSection';
 
 // Navigation
 @import 'MainNavigation';
@@ -24,3 +25,7 @@
 // Progressbars
 @import 'ProgressBarsOverview';
 @import 'SingleBar';
+
+// Projects 
+@import 'ProjectsOverview';
+@import 'SingleProject';

@@ -1,6 +1,15 @@
 #BigHeroText
 {
-    color: #000;
     font-size: 8rem;
     font-family: 'Montserrat-Bold';
+
+    &.dark 
+    {
+        color: $dark-color;
+    }
+
+    &.light 
+    {
+        color: $light-color;
+    }
 }
