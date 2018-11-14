@@ -5,12 +5,9 @@
     display: flex;
     justify-content: space-between;
         
-    .logo 
+    img 
     {
-        img 
-        {
-            width: 3rem;
-        }
+        width: 3rem;
     }
 
     ul 
@@ -19,12 +16,42 @@
         padding: 0;
         display: flex;
         list-style-type: none;
+    }
 
-        li 
+    li 
+    {
+        margin-left: 1.5rem;
+        line-height: 3rem;
+        font-family: 'Montserrat-Bold', sans-serrif;
+
+        &:hover 
         {
-            margin-left: 1.5rem;
-            line-height: 3rem;
-            font-family: 'Montserrat-Bold', sans-serrif;
+            cursor: pointer;
+            
+            a 
+            {
+                &:after 
+                {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    a 
+    {
+        color: $light-color;
+        text-decoration: none;
+        box-sizing: border-box;
+
+        &:after 
+        {
+            content: '';
+            display: block;
+            height: 5px;
+            background-color: $light-color;
+            width: 0;
+            transition: all .2s ease-in-out;
         }
     }
 }
