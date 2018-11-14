@@ -5,6 +5,11 @@
     margin: 0 auto;
     padding: 7rem 0 4rem 0;
 
+    @media only screen and (max-width: $m)   
+    {
+        padding-top: 4rem;
+    }
+
     #PrimaryTitle 
     {
         text-align: center;

@@ -2,6 +2,11 @@
 {
     padding: 4rem 6rem;
 
+    @media only screen and (max-width: $m)  
+    {
+        padding: 4rem 0 0 0;
+    }
+
     #PrimaryTitle 
     {
         margin-bottom: 1rem;

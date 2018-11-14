@@ -11,6 +11,11 @@
     {
         display: flex;
 
+        @media only screen and (max-width: $m)  
+        {
+            padding-top: 1rem;
+        }
+
         .bar 
         {
             width: calc(100% - 4px);
@@ -21,6 +26,11 @@
             {
                 height: 10px;
                 width: 100%;
+
+                @media only screen and (max-width: $m)  
+                {
+                    height: 20px;
+                }
             }
         }
 

@@ -3,6 +3,7 @@ import { MainNavigation } from '../navigations/MainNavigation';
 import Profile from '../../images/PROFILE_1.png';
 import { PrimaryTitle } from '../common/PrimaryTitle';
 import { SubTitle } from '../common/SubTitle';
+import Logo from '../../images/LOGO.png';
 
 export class HeroSection extends React.Component {
     render = () => {
@@ -12,7 +13,8 @@ export class HeroSection extends React.Component {
                     <MainNavigation />
 
                     <div className='profile'>
-                        <img src={ Profile } alt="Myself"/>
+                        <img src={ Profile } alt="Portret of Pieter-Jan De Ridder." className="profile_img"/>
+                        <img src={ Logo } alt="Logo of Pieter-Jan De Ridder" className="logo_img"/>
                         <div className='title'>
                             <PrimaryTitle color='light'>
                                 Hi! I'm Pieter-Jan

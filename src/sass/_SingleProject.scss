@@ -3,6 +3,12 @@
     width: calc(50% - 1rem);
     margin: 0.5rem;
 
+    @media only screen and (max-width: $m)  
+    {
+        width: 100%;
+        margin: 1rem 0 0 0;
+    }
+
     .overlay
     {
         background-color: $dark-color;

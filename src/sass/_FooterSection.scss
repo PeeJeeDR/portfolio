@@ -5,6 +5,11 @@
     background-color: $dark-color;
     text-align: center;
 
+    @media only screen and (max-width: $m)    
+    {
+        padding: 4rem 0 6rem 0;
+    }
+
     i 
     {
         font-size: 1.5rem;
@@ -25,6 +30,11 @@
             width: 0;
             margin-top: 0.6rem;
             transition: all .2s ease-in-out;
+
+            @media only screen and (max-width: $m)   
+            {
+                display: none;
+            }
         }
     }
 
@@ -34,13 +44,33 @@
         display: flex;
         justify-content: center;
 
+        @media only screen and (max-width: $m)   
+        {
+            display: block;
+            padding-top: 2rem;
+        }
+
         div 
         {
             display: flex;
+            
+            @media only screen and (max-width: $m)   
+            {
+                display: block;
+                padding-top: 1.5rem;
+            }
 
             &.contact_section 
             {
                 margin: 0 1.5rem;
+            }
+
+            #CommonText 
+            {
+                @media only screen and (max-width: $m)   
+                {
+                    padding-top: 0.4rem;
+                }
             }
 
             &:hover 

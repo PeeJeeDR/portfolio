@@ -9,23 +9,48 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
+    @media only screen and (max-width: 768px) {
+      #HeroSection .container {
+        padding-bottom: 4rem; } }
   #HeroSection .profile {
     width: 95%;
     display: flex;
     justify-content: space-between; }
+    @media only screen and (max-width: 768px) {
+      #HeroSection .profile {
+        display: block;
+        text-align: center;
+        width: 100%; } }
     #HeroSection .profile .title {
       padding-top: 10rem;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      text-align: right; }
+      @media only screen and (max-width: 768px) {
+        #HeroSection .profile .title {
+          padding-top: 4rem;
+          justify-content: center;
+          align-items: center; } }
       #HeroSection .profile .title #SubTitle {
         background-color: #F3B61F;
         display: inline-block;
         align-self: flex-end;
         margin-top: 1rem;
         padding: 0.5rem 1rem; }
+        @media only screen and (max-width: 768px) {
+          #HeroSection .profile .title #SubTitle {
+            align-self: center; } }
     #HeroSection .profile img {
       align-self: center;
       width: 35rem; }
+      @media only screen and (max-width: 768px) {
+        #HeroSection .profile img.profile_img {
+          display: none; } }
+      #HeroSection .profile img.logo_img {
+        width: 8rem; }
+        @media only screen and (min-width: 768px) {
+          #HeroSection .profile img.logo_img {
+            display: none; } }
 
 #AboutSection {
   min-height: 100vh; }
@@ -34,7 +59,12 @@ html, body {
     padding-top: 8rem; }
   #AboutSection .me {
     text-align: center;
-    padding-bottom: 4rem; }
+    padding-bottom: 4rem;
+    margin: 0 auto;
+    width: 50%; }
+    @media only screen and (max-width: 768px) {
+      #AboutSection .me {
+        width: 100%; } }
     #AboutSection .me a {
       text-decoration: none;
       font-size: 2.4rem;
@@ -53,6 +83,9 @@ html, body {
   width: 100%;
   margin: 0 auto;
   padding: 7rem 0 4rem 0; }
+  @media only screen and (max-width: 768px) {
+    #AboutBox {
+      padding-top: 4rem; } }
   #AboutBox #PrimaryTitle {
     text-align: center; }
 
@@ -68,6 +101,9 @@ html, body {
   padding: 8rem 0 10rem 0;
   background-color: #000;
   text-align: center; }
+  @media only screen and (max-width: 768px) {
+    #FooterSection {
+      padding: 4rem 0 6rem 0; } }
   #FooterSection i {
     font-size: 1.5rem;
     color: #fff;
@@ -82,14 +118,28 @@ html, body {
       width: 0;
       margin-top: 0.6rem;
       transition: all .2s ease-in-out; }
+      @media only screen and (max-width: 768px) {
+        #FooterSection a:after {
+          display: none; } }
   #FooterSection .contact {
     margin: 0;
     display: flex;
     justify-content: center; }
+    @media only screen and (max-width: 768px) {
+      #FooterSection .contact {
+        display: block;
+        padding-top: 2rem; } }
     #FooterSection .contact div {
       display: flex; }
+      @media only screen and (max-width: 768px) {
+        #FooterSection .contact div {
+          display: block;
+          padding-top: 1.5rem; } }
       #FooterSection .contact div.contact_section {
         margin: 0 1.5rem; }
+      @media only screen and (max-width: 768px) {
+        #FooterSection .contact div #CommonText {
+          padding-top: 0.4rem; } }
       #FooterSection .contact div:hover a:after {
         width: 100%; }
   #FooterSection .git {
@@ -111,17 +161,25 @@ html, body {
   padding-top: 2rem;
   display: flex;
   justify-content: space-between; }
+  @media only screen and (max-width: 768px) {
+    #MainNavigation {
+      justify-content: center; } }
   #MainNavigation img {
     width: 3rem; }
+    @media only screen and (max-width: 768px) {
+      #MainNavigation img {
+        display: none; } }
   #MainNavigation ul {
     margin: 0;
     padding: 0;
     display: flex;
     list-style-type: none; }
   #MainNavigation li {
-    margin-left: 1.5rem;
     line-height: 3rem;
-    font-family: 'Montserrat-Bold', sans-serrif; }
+    font-family: 'Montserrat', sans-serrif;
+    font-weight: 700; }
+    #MainNavigation li:nth-child(2) {
+      margin: 0 1.5rem; }
     #MainNavigation li:hover {
       cursor: pointer; }
       #MainNavigation li:hover a:after {
@@ -140,7 +198,8 @@ html, body {
 
 #PrimaryTitle {
   font-size: 2.3rem;
-  font-family: 'Montserrat-Bold'; }
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; }
   #PrimaryTitle.dark {
     color: #000; }
   #PrimaryTitle.light {
@@ -149,26 +208,33 @@ html, body {
 #SubTitle {
   color: #fff;
   font-size: 0.8rem;
-  font-family: 'Montserrat-Bold'; }
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; }
 
 #BigHeroText {
   font-size: 8rem;
-  font-family: 'Montserrat-Bold'; }
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; }
   #BigHeroText.dark {
     color: #000; }
   #BigHeroText.light {
     color: #fff; }
   #BigHeroText::selection {
     color: #F3B61F; }
+  @media only screen and (max-width: 768px) {
+    #BigHeroText {
+      font-size: 2.5rem; } }
 
 #CommonText {
-  font-family: 'Montserrat-Bold'; }
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; }
   #CommonText.dark {
     color: #000; }
   #CommonText.light {
     color: #fff; }
   #CommonText.medium {
-    font-family: 'Montserrat'; }
+    font-family: 'Montserrat';
+    font-weight: 400; }
 
 #LogoOverview {
   display: flex;
@@ -189,6 +255,9 @@ html, body {
   margin: 0.5rem;
   display: flex;
   justify-content: center; }
+  @media only screen and (max-width: 768px) {
+    #LogoPlaceholder {
+      display: none; } }
   #LogoPlaceholder img {
     width: 40%;
     align-self: center;
@@ -198,6 +267,9 @@ html, body {
 
 #ProgressBarsOverview {
   padding: 4rem 6rem; }
+  @media only screen and (max-width: 768px) {
+    #ProgressBarsOverview {
+      padding: 4rem 0 0 0; } }
   #ProgressBarsOverview #PrimaryTitle {
     margin-bottom: 1rem;
     margin-top: 3rem; }
@@ -208,6 +280,9 @@ html, body {
     padding-left: 0.7rem; }
   #SingleBar .bar_container {
     display: flex; }
+    @media only screen and (max-width: 768px) {
+      #SingleBar .bar_container {
+        padding-top: 1rem; } }
     #SingleBar .bar_container .bar {
       width: calc(100% - 4px);
       line-height: 20px;
@@ -215,6 +290,9 @@ html, body {
       #SingleBar .bar_container .bar svg {
         height: 10px;
         width: 100%; }
+        @media only screen and (max-width: 768px) {
+          #SingleBar .bar_container .bar svg {
+            height: 20px; } }
     #SingleBar .bar_container .line {
       width: 2px;
       height: 20px;
@@ -225,10 +303,17 @@ html, body {
   display: flex;
   flex-wrap: wrap;
   padding-top: 4rem; }
+  @media only screen and (max-width: 768px) {
+    #ProjectsOverview {
+      display: block; } }
 
 #SingleProject {
   width: calc(50% - 1rem);
   margin: 0.5rem; }
+  @media only screen and (max-width: 768px) {
+    #SingleProject {
+      width: 100%;
+      margin: 1rem 0 0 0; } }
   #SingleProject .overlay {
     background-color: #000;
     position: absolute;

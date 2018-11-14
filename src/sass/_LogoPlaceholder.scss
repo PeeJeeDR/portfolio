@@ -5,6 +5,11 @@
     margin: 0.5rem;
     display: flex;
     justify-content: center;
+
+    @media only screen and (max-width: $m)  
+    {
+        display: none;
+    }
     
     img 
     {

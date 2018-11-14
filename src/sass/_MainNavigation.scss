@@ -4,10 +4,20 @@
     padding-top: 2rem;
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: $m)   
+    {
+        justify-content: center;
+    }
         
     img 
     {
         width: 3rem;
+
+        @media only screen and (max-width: $m)  
+        {
+            display: none;
+        }
     }
 
     ul 
@@ -20,9 +30,14 @@
 
     li 
     {
-        margin-left: 1.5rem;
         line-height: 3rem;
-        font-family: 'Montserrat-Bold', sans-serrif;
+        font-family: 'Montserrat', sans-serrif;
+        font-weight: 700;
+
+        &:nth-child(2)
+        {
+            margin: 0 1.5rem;
+        }
 
         &:hover 
         {

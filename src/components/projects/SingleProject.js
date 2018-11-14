@@ -3,8 +3,6 @@ import { CommonText } from '../common/CommonText';
 
 export class SingleProject extends React.Component {
     renderFacebook = () => {
-
-        console.log(this.props.project.facebook_url);
         if (this.props.project.facebook_url) 
         {
             return (

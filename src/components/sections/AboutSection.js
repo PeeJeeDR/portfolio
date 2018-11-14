@@ -12,8 +12,8 @@ export class AboutSection extends React.Component {
                 
                     <div className='me'>
                         <CommonText>
-                            Mijn naam is Pieter-Jan De Ridder, student Multimedia Technologie <br/>
-                            aan de Karel de Grote Hogeschool en een gepassioneerd <br/>
+                            Mijn naam is Pieter-Jan De Ridder, student Multimedia Technologie
+                            aan de Karel de Grote Hogeschool en een gepassioneerd
                             web front end developer!
                         </CommonText>
 

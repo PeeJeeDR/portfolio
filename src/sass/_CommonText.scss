@@ -1,6 +1,7 @@
 #CommonText 
 {
-    font-family: 'Montserrat-Bold';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 
     &.dark 
     {
@@ -15,5 +16,6 @@
     &.medium 
     {
         font-family: 'Montserrat';
+        font-weight: 400;
     }
 }
