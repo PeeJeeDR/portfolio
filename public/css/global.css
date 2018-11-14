@@ -297,6 +297,9 @@ html, body {
       width: 2px;
       height: 20px;
       background-color: #fff; }
+      @media only screen and (max-width: 768px) {
+        #SingleBar .bar_container .line {
+          display: none; } }
 
 #ProjectsOverview {
   width: 100%;
