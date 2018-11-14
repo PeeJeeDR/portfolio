@@ -9,5 +9,12 @@
         width: 8rem;
         align-self: center;
         margin: 0 1rem;
+        transform: scale(1);
+        transition: all 300ms ease-in-out;
+
+        &:hover 
+        {
+            transform: scale(1.1);
+        }
     }
 }

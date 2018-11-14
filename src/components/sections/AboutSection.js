@@ -22,7 +22,6 @@ export class AboutSection extends React.Component {
                         </a>
                     </div>
                 
-
                     <AboutBox />
                 </div>
             </div>
