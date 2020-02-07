@@ -1,7 +1,6 @@
 import React from 'react';
 import { PrimaryTitle } from '../common/PrimaryTitle';
 import { LogoOverview } from '../logos/LogoOverview';
-import { ProgressBarsOverview } from '../progressbars/ProgressBarsOverview';
 
 export class AboutBox extends React.Component {
 
@@ -9,12 +8,10 @@ export class AboutBox extends React.Component {
         return (
             <div id='AboutBox'>
                 <PrimaryTitle color='light'>
-                    What I love!
+                    Tech Stack
                 </PrimaryTitle>
 
                 <LogoOverview />
-
-                <ProgressBarsOverview />
             </div>
         )
     }

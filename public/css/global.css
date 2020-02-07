@@ -68,7 +68,8 @@ html, body {
     #AboutSection .me a {
       text-decoration: none;
       font-size: 2.4rem;
-      color: #000; }
+      color: #000;
+      margin: 0 1rem; }
       #AboutSection .me a i {
         margin-top: 1rem; }
   #AboutSection .content_container {
@@ -82,7 +83,7 @@ html, body {
   background-color: #000;
   width: 100%;
   margin: 0 auto;
-  padding: 7rem 0 4rem 0; }
+  padding: 4rem 0; }
   @media only screen and (max-width: 768px) {
     #AboutBox {
       padding-top: 4rem; } }
@@ -239,15 +240,19 @@ html, body {
 #LogoOverview {
   display: flex;
   justify-content: center;
-  padding-top: 3rem; }
+  flex-wrap: wrap;
+  padding-top: 1rem; }
   #LogoOverview img {
-    width: 8rem;
+    width: 5rem;
     align-self: center;
     margin: 0 1rem;
     transform: scale(1);
-    transition: all 300ms ease-in-out; }
+    transition: all 300ms ease-in-out;
+    filter: grayscale(1);
+    margin-top: 2rem; }
     #LogoOverview img:hover {
-      transform: scale(1.1); }
+      transform: scale(1.1);
+      filter: grayscale(0); }
 
 #LogoPlaceholder {
   background-color: #000;
@@ -264,42 +269,6 @@ html, body {
     transition: all 2s ease-in-out; }
   #LogoPlaceholder:hover img {
     transform: scale(1.1); }
-
-#ProgressBarsOverview {
-  padding: 4rem 6rem; }
-  @media only screen and (max-width: 768px) {
-    #ProgressBarsOverview {
-      padding: 4rem 0 0 0; } }
-  #ProgressBarsOverview #PrimaryTitle {
-    margin-bottom: 1rem;
-    margin-top: 3rem; }
-
-#SingleBar {
-  padding-top: 2.4rem; }
-  #SingleBar #CommonText {
-    padding-left: 0.7rem; }
-  #SingleBar .bar_container {
-    display: flex; }
-    @media only screen and (max-width: 768px) {
-      #SingleBar .bar_container {
-        padding-top: 1rem; } }
-    #SingleBar .bar_container .bar {
-      width: calc(100% - 4px);
-      line-height: 20px;
-      margin-top: -2px; }
-      #SingleBar .bar_container .bar svg {
-        height: 10px;
-        width: 100%; }
-        @media only screen and (max-width: 768px) {
-          #SingleBar .bar_container .bar svg {
-            height: 20px; } }
-    #SingleBar .bar_container .line {
-      width: 2px;
-      height: 20px;
-      background-color: #fff; }
-      @media only screen and (max-width: 768px) {
-        #SingleBar .bar_container .line {
-          display: none; } }
 
 #ProjectsOverview {
   width: 100%;

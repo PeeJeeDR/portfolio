@@ -10,7 +10,7 @@ export class PortfolioSection extends React.Component {
                 <div className='container'>
                     <BigHeroText color='dark'>PORTFOLIO</BigHeroText>
                     <CommonText>
-                        Hier kan je enkele projecten van mij bekijken. Deze zijn gemaakt doorheen mijn schoolcarriere.
+                        Some projects I've made.
                     </CommonText>
                 
                     <ProjectsOverview />

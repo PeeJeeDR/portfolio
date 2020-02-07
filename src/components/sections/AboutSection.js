@@ -12,13 +12,18 @@ export class AboutSection extends React.Component {
                 
                     <div className='me'>
                         <CommonText>
-                            Mijn naam is Pieter-Jan De Ridder, student Multimedia Technologie
-                            aan de Karel de Grote Hogeschool en een gepassioneerd
-                            web front end developer!
+                            <p>Front-developer @ Intracto</p>
+                            <p>Studied Multimedia Technology @ KdG Hoboken</p>
+                            <p>Love wildlife / nature photography</p>
+                            <p>And ofcourse... web development obviously!</p>
                         </CommonText>
 
-                        <a href="https://www.linkedin.com/in/pieter-jan-de-ridder-991483100/">
-                            <i className="fab fa-linkedin"></i>
+                        <a target="_blank" href="https://www.linkedin.com/in/pieter-jan-de-ridder-991483100/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                        <a target="_blank" href="https://www.instagram.com/pieterjan.deridder/">
+                            <i class="fab fa-instagram"></i>
                         </a>
                     </div>
                 
